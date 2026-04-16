@@ -23,7 +23,7 @@ For every problem, I store:
 ## Repository Structure
 
 ```text
-Codes/
+Topics/
 ├── Binary Search/
 ├── Bitmask/
 ├── Brute Force/
@@ -40,8 +40,7 @@ Codes/
 └── ...
 ```
 
-* Each topic folder contains the corresponding .cpp solutions.
-
+* Each topic folder contains the relevant problem list, while the `/Codes` folder stores the corresponding solutions.
 ## Naming Convention
 ```text
 2147D.cpp
