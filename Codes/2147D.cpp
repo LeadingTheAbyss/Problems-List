@@ -12,29 +12,34 @@ void solve() {
 
     int n;
     cin >> n;
-    vector<int> a(n);
+    vector<int> a(n), odds;
 
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
 
     map<int,int, less<>> mpp;
-    multiset<array<int,2>> ms;
     for (int x : a) {
         mpp[x]++;
     }
     
     int A = 0, B = 0, k = 0;   
     for (auto [x, y] : mpp) {
-        if (k == 0) {
-            A += (x + 1) / 2 * y;
-            B += x / 2 * y;
+        A += x / 2 * y;
+        B += x / 2 * y;
+        if (x % 2) {
+            odds.push_back(y);
+        }
+    }
+
+    sort(odds.rbegin(), odds.rend());
+    for (int i = 0; i < odds.size(); i++) {
+        if (i % 2) {
+            B += odds[i];
         }
         else {
-            B += (x + 1) / 2 * y;
-            A += x / 2 * y;
+            A += odds[i];
         }
-        k ^= 1;
     }
     
     cout << A << " " << B << '\n';
