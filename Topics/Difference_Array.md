@@ -1,0 +1,3 @@
+| Problem | Rating | Solution Idea | Implementation |
+|--------|-------|-----------------------------|------|
+| [1932F](https://codeforces.com/contest/1932/problem/F) | 1900 | <details><summary>Show</summary><ul><li>For every point `x` in the range `[1, n]`, we have two options.</li><ol><li>Feed all the cats at point `x`.</li><li>Skip this point.</li></ol><li>So if we pick to feed the cat, we can then feed none of the cats in the range including point `x`, so we skip to the next `r`.</li><li>To skip to the next `r`, we simply move forward to the range having the largest value of `r` which includes the point `x`.</li></li></ul></details> | [Code](../Codes/1932F.cpp) |
