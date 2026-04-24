@@ -1,0 +1,3 @@
+| Problem | Rating | Solution Idea | Implementation |
+|--------|-------|-----------------------------|------------|
+| [1746D](https://codeforces.com/contest/1746/problem/D) | 1900 |<details><summary>Show</summary><ul><li> For every node, we need to store what is the maximal score we can get from this node's subtree if we have to get `k` paths using it.</li><li>Just go through all the nodes and pick this maximal value.</li><li>While we're on a node with multiple children, we need to assign each child with `available_paths / number of children` paths each, due to the condition `\|cu − cv\| ≤ 1`. </li></ul></details>| [Code](../Codes/1746D.cpp) |
