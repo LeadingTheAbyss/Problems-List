@@ -1,0 +1,3 @@
+| Problem | Rating | Solution Idea | Implementation |
+|--------|-------|------------------|------|
+| [478C](https://codeforces.com/contest/478/problem/C) | 1800 | <details><summary>Show</summary><ul><li>There are two cases :<ol><li>The values of `r`, `g` and `b` become equal : In this case we can simply use all of the possible moves by doing `r--`, `g--` and `b--` on each move.</li><li>The value of one of the colours is much larger than the other 2 colours : In such a case we will only be able to use the sum of the other two. This is so as on every move we can simply use `large -= 2` and `any one of the smaller--`. This runs till both of our smaller colours are exhausted.</li></li></ul></details> | [Code](../Codes/478C.cpp) |
