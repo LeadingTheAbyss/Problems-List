@@ -3,7 +3,7 @@
 A topic-wise archive of competitive programming / DSA problems I solve, document, and revisit.
 
 This repo is built for:
-- Storing high quality problems (`1600+ by CF standards`)
+- Storing high quality problems (`Mostly 1600+ by CF standards`)
 - Quick recall of the core idea behind each solution
 - Maintaining a clean record of solved problems with code
 ---
