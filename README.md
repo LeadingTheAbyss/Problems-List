@@ -14,6 +14,7 @@ For every problem, I store:
 
 - **Problem**
 - **Topic**
+- **Any Additional Topics**
 - **Rating**
 - **Solution Idea** *(hidden in spoiler form to avoid accidental exposure)*
 - **Code**
